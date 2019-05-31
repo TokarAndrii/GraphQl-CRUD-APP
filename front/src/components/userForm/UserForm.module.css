@@ -41,3 +41,7 @@
     padding: 8px;
     width: 400px;
 }
+
+.addUserBtn:hover{
+    outline: 1px solid blue;
+}

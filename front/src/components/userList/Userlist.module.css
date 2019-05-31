@@ -10,3 +10,11 @@
     text-align-last: left;
     padding-left: 8px;
 }
+
+.deleteBtn{
+    padding: 4px 22px;
+}
+
+.deleteBtn:hover{
+    outline: 1px solid blue;
+}

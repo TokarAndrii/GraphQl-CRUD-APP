@@ -1,20 +1,45 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
 import UsersList from './components/userList/UserList';
 import UserForm from './components/userForm/UserForm';
+import styled from 'styled-components'
 
-function App() {
+function App({ className }) {
+  const [isShowAddForm, showAddForm] = useState(false);
+
   return (
-    <div className="App">
+    <div className={className}>
       <header className="App-header">
         <p>
-          GraphQl
+          React+GraphQl+Apollo
         </p>
+        <button className="btn" onClick={() => showAddForm(!isShowAddForm)}>Add user</button>
       </header>
       <UsersList></UsersList>
-      <UserForm></UserForm>
+      {isShowAddForm && <UserForm showAddForm={showAddForm}></UserForm>}
     </div>
   );
+};
+
+const StyledApp = styled(App)`
+text-align: center;
+.btn {
+  padding: 8px 32px;
+  flex: 0 1 200px;
+  height: 80%
 }
 
-export default App;
+.btn:hover{
+    outline: 1px solid blue;
+}
+header {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  padding: 0 32px;
+}
+`
+
+export default StyledApp;

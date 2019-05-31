@@ -56,17 +56,13 @@ const INITIAL_STATE = {
 class UserForm extends Component {
     state = { ...INITIAL_STATE }
     handleSubmit = (e, onAdd) => {
-        console.log('handleSubmit at UserForm');
         e.preventDefault();
         const { firstName, secondName, email, phone, website, companyName,
             addressCity, } = this.state;
-        // onAdd({
-        //     firstName, secondName, email, phone, website, companyName,
-        //     addressCity,
-        // })
-
         onAdd({ variables: { firstName, secondName, email, phone, website, companyName, addressCity, } })
-        this.setState({ ...INITIAL_STATE })
+        this.setState({ ...INITIAL_STATE });
+        const { showAddForm } = this.props;
+        showAddForm(false);
     }
 
     handleInput = ({ target }) => {

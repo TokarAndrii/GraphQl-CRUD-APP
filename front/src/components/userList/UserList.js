@@ -38,6 +38,7 @@ const Userlist = () => (
                             <th className={styles.td}>Phone</th>
                             <th className={styles.td}>Company</th>
                             <th className={styles.td}>Address City</th>
+                            <th className={styles.td}>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,6 +52,7 @@ const Userlist = () => (
                                     <td className={styles.td}>{phone}</td>
                                     <td className={styles.td}>{company ? company.name : <b>Not Set</b>}</td>
                                     <td className={styles.td}>{address ? address.city : <b>Not Set</b>}</td>
+                                    <td className={styles.td}><button className={styles.deleteBtn}>Delete</button></td>
                                 </tr>
                             )
                         })}

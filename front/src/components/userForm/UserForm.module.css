@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.label{
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 60px;
+    width: 700px;
+}
+
+.label:last-of-type{
+    margin-bottom: 24px;
+}
+
+
+.input{
+    padding: 6px;
+    width: 70%;
+}
+
+.input:active{
+    outline: 2px solid blue;
+}
+
+.labeltext{
+    font-weight: bold;
+    margin-right: 12px;
+    flex: 0 1 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.addUserBtn{
+    padding: 8px;
+    width: 400px;
+}

@@ -5,6 +5,10 @@
     font-size: 18px;
 }
 
+.tr:hover{
+    background-color: bisque;
+}
+
 .td{
     padding: 4px 0;
     text-align-last: left;
@@ -13,6 +17,12 @@
 
 .deleteBtn{
     padding: 4px 22px;
+    margin-right: 8px;
+}
+
+.detailsLink{
+    text-decoration: none;
+    color: black;
 }
 
 .deleteBtn:hover{

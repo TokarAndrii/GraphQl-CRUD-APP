@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
-import UsersList from './components/userList/UserList';
+// import UsersList from './components/userList/UserList';
 import UserForm from './components/userForm/UserForm';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { Switch, Route } from 'react-router-dom';
+import USER_PAGE from './configs/routes';
+import INDEX from './configs/routes';
+import UserPage from './components/userPage/UserPage';
+import HomePage from './pages/homePage/HomePage'
 
 function App({ className }) {
   const [isShowAddForm, showAddForm] = useState(false);
@@ -14,8 +19,11 @@ function App({ className }) {
         </p>
         <button className="btn" onClick={() => showAddForm(!isShowAddForm)}>Add user</button>
       </header>
-      <UsersList></UsersList>
       {isShowAddForm && <UserForm showAddForm={showAddForm}></UserForm>}
+      <Switch>
+        <Route exact path={INDEX} component={HomePage}></Route>
+        <Route path={USER_PAGE} component={UserPage}></Route>
+      </Switch>
     </div>
   );
 };

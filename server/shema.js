@@ -80,6 +80,19 @@ const mutations = new GraphQLObjectType({
                         return resp.data
                     })
             }
+        },
+        removeUser: {
+            type: UsersType,
+            args: {
+                id: { type: new GraphQLNonNull(GraphQLString) },
+            },
+            resolve(parent, { id }) {
+                return axios.delete(`http://localhost:3000/users/${id}`)
+                    .then(resp => {
+                        console.log('resp at DELETE - ', resp)
+                        return resp.data
+                    })
+            }
         }
     }
 });

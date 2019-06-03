@@ -37,6 +37,7 @@ const UsersType = new GraphQLObjectType({
         id: { type: GraphQLInt },
         firstName: { type: GraphQLString },
         secondName: { type: GraphQLString },
+        photo: { type: GraphQLString },
         email: { type: GraphQLString },
         address: {
             type: AddressType
@@ -116,7 +117,9 @@ const RootQuery = new GraphQLObjectType({
         user: {
             type: UsersType,
             args: {
-                id: { type: GraphQLInt }
+                id: {
+                    type: new GraphQLNonNull(GraphQLString)
+                }
             },
             resolve(parent, args) {
                 return axios.get(`http://localhost:3000/users/${args.id}`)

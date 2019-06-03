@@ -117,7 +117,7 @@ class UserForm extends Component {
                                             <span className={styles.labeltext}>Address City:</span>
                                             <input type="text" className={styles.input} name="addressCity" value={addressCity} onChange={this.handleInput}></input>
                                         </label>
-                                        <button className={styles.addUserBtn} type="submit">Add User</button>
+                                        <button className={styles.addUserBtn} type="submit">Submit</button>
                                     </form>
                                 </div>
                             )}

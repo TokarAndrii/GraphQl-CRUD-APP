@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import UserForm from './components/userForm/UserForm';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
-import USER_PAGE from './configs/routes';
-import INDEX from './configs/routes';
+import routes from './configs/routes';
 import UserPage from './components/userPage/UserPage';
 import HomePage from './pages/homePage/HomePage'
 
@@ -21,8 +20,8 @@ function App({ className }) {
       </header>
       {isShowAddForm && <UserForm showAddForm={showAddForm}></UserForm>}
       <Switch>
-        <Route exact path={INDEX} component={HomePage}></Route>
-        <Route path={USER_PAGE} component={UserPage}></Route>
+        <Route exact path={routes.INDEX} component={HomePage}></Route>
+        <Route path={routes.USER_PAGE} component={UserPage}></Route>
       </Switch>
     </div>
   );

@@ -3,6 +3,7 @@
     {
       "id": 1,
       "firstName": "Leanne Graham",
+      "photo": "https://i.ibb.co/r0TMn61/adult-african-daytime-2379886.jpg",
       "secondName": "Bret",
       "email": "Sincere@april.biz",
       "address": {
@@ -26,6 +27,7 @@
     {
       "id": 2,
       "firstName": "Ervin Howell",
+      "photo": "https://i.ibb.co/L9DpSsM/adolescent-attractive-beautiful-432497.jpg",
       "secondName": "Antonette",
       "email": "Shanna@melissa.tv",
       "address": {
@@ -49,6 +51,7 @@
     {
       "id": 3,
       "firstName": "Clementine Bauch",
+      "photo": "https://i.ibb.co/C0rCm7x/adult-angry-businessman-428364.jpg",
       "secondName": "Samantha",
       "email": "Nathan@yesenia.net",
       "address": {
@@ -72,6 +75,7 @@
     {
       "id": 4,
       "firstName": "Patricia Lebsack",
+      "photo": "https://i.ibb.co/Kxgthjj/adult-black-background-businessman-262391.jpg",
       "secondName": "Karianne",
       "email": "Julianne.OConner@kory.org",
       "address": {
@@ -95,6 +99,7 @@
     {
       "id": 5,
       "firstName": "Chelsey Dietrich",
+      "photo": "https://i.ibb.co/rvYCN9c/adult-blue-businessman-1043474.jpg",
       "secondName": "Kamren",
       "email": "Lucio_Hettinger@annie.ca",
       "address": {
@@ -118,6 +123,7 @@
     {
       "id": 6,
       "firstName": "Mrs. Dennis Schulist",
+      "photo": "https://i.ibb.co/sPyGsNn/adult-boy-casual-220453-1.jpg",
       "secondName": "Leopoldo_Corkery",
       "email": "Karley_Dach@jasper.info",
       "address": {
@@ -141,6 +147,7 @@
     {
       "id": 7,
       "firstName": "Kurtis Weissnat",
+      "photo": "https://i.ibb.co/9hzkGFj/adult-businessman-contemporary-937481.jpg",
       "secondName": "Elwyn.Skiles",
       "email": "Telly.Hoeger@billy.biz",
       "address": {
@@ -164,6 +171,7 @@
     {
       "id": 8,
       "firstName": "Nicholas Runolfsdottir V",
+      "photo": "https://i.ibb.co/LgXxJB7/art-coffee-coffee-cup-2380317.jpg",
       "secondName": "Maxime_Nienow",
       "email": "Sherwood@rosamond.me",
       "address": {
@@ -187,6 +195,7 @@
     {
       "id": 9,
       "firstName": "Glenna Reichert",
+      "photo": "https://i.ibb.co/9452XDQ/beautiful-beauty-blond-1587009.jpg",
       "secondName": "Delphine",
       "email": "Chaim_McDermott@dana.io",
       "address": {
@@ -210,6 +219,7 @@
     {
       "id": 10,
       "firstName": "Clementina DuBuque",
+      "photo": "https://i.ibb.co/4gMDNfT/beautiful-blur-casual-935756.jpg",
       "secondName": "Moriah.Stanton",
       "email": "Rey.Padberg@karina.biz",
       "address": {
@@ -229,20 +239,6 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
-    },
-    {
-      "firstName": "Andrii",
-      "secondName": "Tokar",
-      "email": "tokar.andrii@gmail.com",
-      "phone": "0973958738",
-      "website": "tokar.andrii.com.ua",
-      "company": {
-        "name": "Ecomm"
-      },
-      "address": {
-        "city": "Kyiv"
-      },
-      "id": 11
     }
   ]
 }

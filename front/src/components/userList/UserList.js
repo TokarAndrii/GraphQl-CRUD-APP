@@ -3,6 +3,7 @@ import React from 'react';
 import { gql } from "apollo-boost";
 import { Link } from 'react-router-dom';
 import styles from './Userlist.module.css';
+import routes from '../../configs/routes'
 
 const USERS_QUERY = gql`
 query UsersQuery{
@@ -33,7 +34,6 @@ mutation  RemoveUser($id: String!){
 
 const Userlist = () => {
     const handleDelete = (id, onDelete) => {
-        console.log(`handleDelete ${id}`);
         onDelete({ variables: { id: `${id}` } });
     }
 
@@ -84,9 +84,8 @@ const Userlist = () => {
                                                         </>
                                                 }
                                             </Mutation>
-
                                             <button className={styles.deleteBtn}>
-                                                <Link className={styles.detailsLink} to={`user/${id}`}>Details</Link>
+                                                <Link className={styles.detailsLink} to={`${routes.USER}/${id}`}>Details</Link>
                                             </button>
                                         </td>
                                     </tr>

@@ -87,6 +87,9 @@ const Userlist = () => {
                                             <button className={styles.deleteBtn}>
                                                 <Link className={styles.detailsLink} to={`${routes.USER}/${id}`}>Details</Link>
                                             </button>
+                                            <button className={styles.deleteBtn}>
+                                                <Link className={styles.detailsLink} to={`${routes.USER}/edit/${id}`}>Edit</Link>
+                                            </button>
                                         </td>
                                     </tr>
                                 )
@@ -97,10 +100,7 @@ const Userlist = () => {
             }}
         </Query>
     )
-}
-
-
-    ;
+};
 
 
 export default Userlist;

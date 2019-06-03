@@ -46,20 +46,16 @@ class UserPage extends Component {
                                     <p className="rowText"><b>ID: </b><span>{data.user.id}</span></p>
                                     <p className="rowText"><b>Email: </b><span>{data.user.email}</span></p>
                                     <p className="rowText"><b>Phone: </b><span>{data.user.phone}</span></p>
-                                <p className="rowText"><b>Company: </b><span>{data.user.company.name}</span></p>
-                                <p className="rowText"><b>City: </b><span>{data.user.address.city}</span></p>
+                                    <p className="rowText"><b>Company: </b><span>{data.user.company.name}</span></p>
+                                    <p className="rowText"><b>City: </b><span>{data.user.address.city}</span></p>
                                     <p className="rowText"><b>Website: </b><span>{data.user.website}</span></p>
-                                    </div>
-                                </div>                                    
-            
-                                                                                            
-            )                                                                
-            
-                    
-        }          
-   
+                                </div>
+                            </div>
 
-    }
+                        )
+                    }
+
+                }
             </Query >
         )
     }

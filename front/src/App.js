@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-// import UsersList from './components/userList/UserList';
 import UserForm from './components/userForm/UserForm';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 import routes from './configs/routes';
-import UserPage from './components/userPage/UserPage';
-import HomePage from './pages/homePage/HomePage'
+
+import UserPage from './pages/userPage/UserPage';
+import HomePage from './pages/homePage/HomePage';
+import UserEditPage from './pages/userEditPage/UserEditPage'
 
 function App({ className }) {
   const [isShowAddForm, showAddForm] = useState(false);
@@ -19,10 +20,18 @@ function App({ className }) {
         <button className="btn" onClick={() => showAddForm(!isShowAddForm)}>Add user</button>
       </header>
       {isShowAddForm && <UserForm showAddForm={showAddForm}></UserForm>}
-      <Switch>
-        <Route exact path={routes.INDEX} component={HomePage}></Route>
-        <Route path={routes.USER_PAGE} component={UserPage}></Route>
-      </Switch>
+      <main>
+        <Switch>
+          <Route exact path={routes.INDEX} component={HomePage}></Route>
+          <Route exact path={routes.USER_PAGE} component={UserPage}></Route>
+          <Route exact path={routes.USER_EDIT_PAGE} component={UserEditPage}></Route>
+        </Switch>
+      </main>
+      <footer>
+        <span>developed by: Tokar Andrii</span>
+        <span>tokar.andrii@gmail.com</span>
+        <a className="footerLink" href="https://github.com/TokarAndrii/">github.com</a>
+      </footer>
     </div>
   );
 };
@@ -46,6 +55,25 @@ header {
   font-size: calc(10px + 2vmin);
   color: black;
   padding: 0 32px;
+}
+
+main{
+  min-height: 76vh;
+}
+footer{
+  color: white;
+  background-color: black;
+  padding: 0 256px;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerLink{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 `
 

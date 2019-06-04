@@ -38,7 +38,7 @@ class UserEditPage extends Component {
                         <div className={className}>
                             <div className="wrapper">
                                 <Link to={routes.INDEX}>Home</Link>
-                                <UserEditForm {...data}></UserEditForm>
+                                <UserEditForm {...data} {...this.props}></UserEditForm>
                             </div>
                         </div>
                     )

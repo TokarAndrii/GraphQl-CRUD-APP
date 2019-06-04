@@ -80,6 +80,10 @@ const mutations = new GraphQLObjectType({
                     .then(resp => {
                         return resp.data
                     })
+                    .catch(err => {
+                        console.log('[err] : ', err);
+                        return err;
+                    })
             }
         },
         removeUser: {
@@ -92,6 +96,44 @@ const mutations = new GraphQLObjectType({
                     .then(resp => {
                         console.log('resp at DELETE - ', resp)
                         return resp.data
+                    })
+                    .catch(err => {
+                        console.log('[err] : ', err);
+                        return err;
+                    })
+            }
+        },
+        editUser: {
+            type: UsersType,
+            args: {
+                id: { type: new GraphQLNonNull(GraphQLString) },
+                firstName: { type: GraphQLString },
+                secondName: { type: GraphQLString },
+                email: { type: GraphQLString },
+                phone: { type: GraphQLString },
+                website: { type: GraphQLString },
+                companyName: { type: GraphQLString },
+                addressCity: { type: GraphQLString }
+            },
+            resolve(parent, args) {
+                return axios.patch(`http://localhost:3000/users/${args.id}`,
+                    {
+                        firstName: args.firstName,
+                        secondName: args.secondName,
+                        email: args.email,
+                        phone: args.phone,
+                        website: args.website,
+                        company: {
+                            name: args.companyName
+                        },
+                        address: {
+                            city: args.addressCity,
+                        }
+                    })
+                    .then(resp => resp.data)
+                    .catch(err => {
+                        console.log('[err] : ', err);
+                        return err;
                     })
             }
         }

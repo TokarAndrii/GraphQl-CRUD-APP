@@ -239,6 +239,20 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
+    },
+    {
+      "firstName": "Tokar",
+      "secondName": "Andrii",
+      "email": "tokar.andrii@gmail.com",
+      "phone": "(097)-395-87-38",
+      "website": "tokar.andrii@com",
+      "company": {
+        "name": "Ecomm Co"
+      },
+      "address": {
+        "city": "Ukraine, Kyiv "
+      },
+      "id": 11
     }
   ]
 }

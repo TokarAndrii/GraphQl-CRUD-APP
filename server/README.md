@@ -10,3 +10,9 @@ npm run json-server
 ```
 npm run node-server
 ```
+
+useful links:
+
+[Building a GraphQL Server](https://www.youtube.com/watch?v=ay81Q5JhkEw&list=PLillGF-RfqbYZty73_PHBqKRDnv7ikh68&index=5)
+
+[bradtraversy github](https://github.com/bradtraversy/customerbase)
